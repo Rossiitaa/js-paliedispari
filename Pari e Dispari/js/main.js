@@ -1,3 +1,4 @@
+// variabili utente
 const userChoice = prompt('Choose between odd or even');
 if (userChoice === 'even') {
     console.log('even');
@@ -14,4 +15,24 @@ if (userNumber < 1 || userNumber > 5) {
     console.log('enter only numbers');
 } else {
     console.log(userNumber);
+}
+
+// variabile computer
+const pcNumber = randomNumber(1 , 5);
+console.log(pcNumber);
+
+// variabile che sommi i due risultati
+let sum = userNumber + pcNumber;
+console.log(sum);
+
+// variabile per determina se è pari o dispari
+const variableOddOrEven = oddOrEven (sum);
+if (variableOddOrEven % 2 == 0) {
+    
+    console.log('Whoever has chosen even has won');
+
+} else if (variableOddOrEven % 2 !== 0){
+
+    console.log('Whoever chose odd won');
+
 }
