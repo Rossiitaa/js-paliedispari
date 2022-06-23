@@ -4,7 +4,7 @@
 //creo una funzione per invertire la parola
 
 let normalWord = prompt('Enter here your word to find out if it is palindrome')
-let reverseWord = wordReverse(normalWord);
+let reverseWord = wordNormal(normalWord);
 
 if(normalWord === reverseWord){
     console.log('the word is palindrome');
@@ -12,7 +12,7 @@ if(normalWord === reverseWord){
     console.log('the word is not palindrome');
 }
 
-function wordReverse(word){
+function wordNormal(word){
 let reverseWord = '';
 
 let i = word.length - 1;
